@@ -13,7 +13,7 @@ function drawMondrian(x1, y1, x2, y2, noOfIterations) {
     if (noOfIterations == 0){
       fill(random(c));
       strokeWeight(sw);
-    rect(x1, y1, x2-x1-sw, y2-y1-sw);
+      rect(x1, y1, x2-x1-sw, y2-y1-sw);
     }else  {
       let i = random(x1,x2);
       let j = random(y1,y2);
