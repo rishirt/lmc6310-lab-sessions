@@ -3,6 +3,8 @@ let haikuLines = haiku.split(',');
 let counter = 0;
 let font;
 
+console.log(haikuLines);
+
 function preload(){
     font = loadFont("./assets/permanentMarker.ttf");
 }
