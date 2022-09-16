@@ -19,12 +19,13 @@ function setup() {
   img.loadPixels(); 
 }
 
+
 function draw() {
   let size = floor(map(mouseX, 0, width, 10, 50)); 
 
   for (let starty = 0; starty < img.height; starty++) { 
     for (let startx = 0; startx < img.width; startx++) {
-    let index = (startx + starty * img.width) * 4;
+    let index = (startx + (starty * img.width)) * 4;
     let r = img.pixels[index + 0];
     let g = img.pixels[index + 1];
     let b = img.pixels[index + 2];

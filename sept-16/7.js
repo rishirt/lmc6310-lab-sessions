@@ -16,8 +16,8 @@ function setup() {
       let originalColor = img.get(x, y);
 
 
-      let r = green(originalColor); // 255 - red(originalColor)
-      let g = red(originalColor); //255 - green(originalColor)
+      let r = 255 - red(originalColor); // 255 - red(originalColor)
+      let g = 255 - green(originalColor); //255 - green(originalColor)
       let b = 255 - blue(originalColor);
       let outputColor = color(r, g, b);
 
