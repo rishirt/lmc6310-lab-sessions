@@ -10,7 +10,7 @@ function setup(){
 
 function draw(){
   background(255);
-  let pixelationLevel = 20;
+  let pixelationLevel = 1;
   let highestPerceivedBrightness = 0;
   let hpbX = 0;
   let hpbY = 0;
@@ -33,5 +33,5 @@ function draw(){
   image (capture,0,0,width,height)
   fill(255,0,0);
   noStroke();
-  ellipse(hpbX,hpbY,pixelationLevel,pixelationLevel);
+  ellipse(hpbX,hpbY,20,20);
 }

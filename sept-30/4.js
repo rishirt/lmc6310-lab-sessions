@@ -28,13 +28,15 @@ function draw() {
 
 
 function drawNose()  {
+  console.log(poses);
 
     for (let i = 0; i < poses.length; i++) {
+        
         let pose = poses[i].pose;
         let nose = pose.keypoints[0];
         if(nose.score > 0.2){
-            vertices.push(nose.position.x);
-            vertices.push(nose.position.y);
+            // vertices.push(nose.position.x);
+            // vertices.push(nose.position.y);
             fill(255,0,0);
             noStroke();
             ellipse(nose.position.x, nose.position.y, 10, 10);

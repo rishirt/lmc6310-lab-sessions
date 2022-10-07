@@ -10,7 +10,7 @@ function setup(){
 
 function draw(){
   background(255);
-  let pixelationLevel = 10;
+  let pixelationLevel = 20;
   capture.loadPixels();
   for(let y = 0;y<capture.height;y+=pixelationLevel){
     for(let x = 0;x<capture.width;x+=pixelationLevel){

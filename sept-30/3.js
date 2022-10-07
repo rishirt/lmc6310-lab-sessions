@@ -1,4 +1,4 @@
-let video;
+let capture;
 let captureButton;
 let captures = [];
 // let lastCaptureTime = millis();
@@ -8,16 +8,16 @@ function setup(){
   background(25);
   capture = createCapture(VIDEO);
   capture.hide();
-  // captureButton = createButton('SNAP');
-  // captureButton.mousePressed(snapPicture);
+  captureButton = createButton('SNAP');
+  captureButton.mousePressed(snapPicture);
   lastCaptureTime = millis();
 }
 
 function draw(){
-  if(millis()-lastCaptureTime > 500){
-    lastCaptureTime = millis();
-    snapPicture();
-  }
+  // if(millis()-lastCaptureTime > 500){
+  //   lastCaptureTime = millis();
+  //   snapPicture();
+  // }
   let w = 120;
   let h = 80;
   let x = 0;
@@ -31,7 +31,7 @@ function draw(){
     }
   }
 
-  if(y==height && x==width){
+  if(y==(height-h) && x==(width-w)){
     captures.shift();
   }
 }
